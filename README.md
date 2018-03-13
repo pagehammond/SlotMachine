@@ -1,1 +1,3 @@
 # SlotMachine
+
+First commit
