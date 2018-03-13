@@ -1,0 +1,18 @@
+print("Welcome to Page's Slot Machine!")
+numberofTimes = input('How many times would you like to play?')
+slotsPossible = ["bar","bar","bar","crown","crown","cherry","cherry"]
+from random import *
+def play():
+      slot1=choice(slotsPossible)
+      slot2=choice(slotsPossible)
+      slot3=choice(slotsPossible)
+      win = ""
+      if (slot1==slot2==slot3=="crown"):
+          win = "You win $250!"
+      if (slot1==slot2==slot3=="banana"):
+          win = "You win $500!"
+      if (slot1==slot2==slot3=="bar"):
+          win = "You lose"
+      return slot1+":"+slot2+":"+slot3+" "+win
+for i in range(int(numberofTimes)):
+      print(play())
